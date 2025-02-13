@@ -79,6 +79,8 @@ test:
 #
 production:
   <<: *default
-  database: my-blog
-  username: my-blog
-  password: <%= ENV["BLOG_DATABASE_PASSWORD"] %>
+  username: <%= ENV['RENDER_DB_USER'] %>
+  password: <%= ENV['RENDER_DB_PASSWORD'] %>
+  host: <%= ENV['RENDER_DB_HOST'] %>
+  port: <%= ENV['RENDER_DB_PORT'] %>
+  database: <%= ENV['RENDER_DB_NAME'] %>
