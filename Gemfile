@@ -58,6 +58,7 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+  gem "sqlite3"
   gem "capybara"
   gem "selenium-webdriver"
 end
@@ -65,3 +66,5 @@ end
 gem "devise", "~> 4.9"
 
 gem "tailwindcss-rails", "~> 4.0"
+
+gem "tailwindcss-ruby", "~> 4.0"
